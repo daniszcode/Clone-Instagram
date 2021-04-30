@@ -1,12 +1,14 @@
 @import "./variables.scss";
 @import "./mixing.scss";
+@import "./style.scss";
 
 .header-conteiner {
-    @include conteiner(375px, 132px);
-    background-color: $color-primary;
-    
-   
 
+    display: flex;
+    flex-direction: column;
+    @include conteiner(358px, 130px);
+    background-color: $color-primary;
+    margin: auto;
     #icons-phone {
         display: flex;
         flex-direction: row;
@@ -24,23 +26,25 @@
         }
         #phone-sinal {
             width: 5%;
+            padding: 3px;
         }
         #wifi-icon {
             width: 5%;
+            padding: 3px;
 
         }
         #battery {
             width: 5%;
+            padding: 3px;
+
         }
     
 
     }
         
     #input {
-        display: flex;
-        flex-direction: row;
-        width: 320px;
-        height: 28px;
+        @include conteiner-box(row, flex);
+        @include conteiner(340px, 28px);
         border-radius: 10px;
         background-color: rgba(118, 118, 128, 0.12);
         padding: 5px 3px 5px 3px;
@@ -48,6 +52,7 @@
         align-items: center;
         justify-content: start;
         cursor: pointer;
+        margin: 5px;
        
         #icon-search {
             width: 16px;
@@ -55,10 +60,28 @@
         }
 
     }
+    .buttouns{
+        @include conteiner-box(row, flex);
+        align-items: center;
+        gap: 5px;
+        width: 400px;
+        height: 50px;
+        margin: 2px 2px;
 
-    /*#buttouns {
+        #buttouns {
+        @include conteiner(71px, 31px);
+        background-color: $collor-buttoun;
+        border-radius: 7px;
+        }
+
+        #buttoun-last {
+            @include conteiner(50px, 31px);
+            background-color: $collor-buttoun;
+            border-radius: 7px;
+        }
       
-    }*/
+  
+    }
 
 
 
