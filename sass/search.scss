@@ -1,0 +1,66 @@
+@import "./variables.scss";
+@import "./mixing.scss";
+
+.header-conteiner {
+    @include conteiner(375px, 132px);
+    background-color: $color-primary;
+   
+
+    #icons-phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        @include conteiner(350px, 35px);
+
+        
+        #time {
+            font-family: sans-serif;
+            font-weight: 450;
+            text-align:left;
+            color: #171717;
+            margin-right: auto;
+        }
+        #phone-sinal {
+            width: 5%;
+        }
+        #wifi-icon {
+            width: 5%;
+
+        }
+        #battery {
+            width: 5%;
+        }
+    
+
+    }
+        
+    #input {
+        display: flex;
+        flex-direction: row;
+        width: 320px;
+        height: 28px;
+        border-radius: 10px;
+        background-color: rgba(118, 118, 128, 0.12);
+        padding: 5px 3px 5px 3px;
+        gap: 5px;
+        align-items: center;
+        justify-content: start;
+        cursor: pointer;
+       
+        #icon-search {
+            width: 16px;
+            height: 16px;
+        }
+
+    }
+
+    /*#buttouns {
+      
+    }*/
+
+
+
+
+}
+/*###########---Header----##########*/

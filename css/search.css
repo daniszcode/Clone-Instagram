@@ -1,0 +1,53 @@
+.header-conteiner {
+  width: 375px;
+  height: 132px;
+  background-color: #FAFAFA;
+  /*#buttouns {
+
+  }*/
+}
+.header-conteiner #icons-phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 350px;
+  height: 35px;
+}
+.header-conteiner #icons-phone #time {
+  font-family: sans-serif;
+  font-weight: 450;
+  text-align: left;
+  color: #171717;
+  margin-right: auto;
+}
+.header-conteiner #icons-phone #phone-sinal {
+  width: 5%;
+}
+.header-conteiner #icons-phone #wifi-icon {
+  width: 5%;
+}
+.header-conteiner #icons-phone #battery {
+  width: 5%;
+}
+.header-conteiner #input {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  height: 28px;
+  border-radius: 10px;
+  background-color: rgba(118, 118, 128, 0.12);
+  padding: 5px 3px 5px 3px;
+  gap: 5px;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+}
+.header-conteiner #input #icon-search {
+  width: 16px;
+  height: 16px;
+}
+
+/*###########---Header----##########*/
+
+/*# sourceMappingURL=search.css.map */
