@@ -2,6 +2,7 @@
 @import "./mixing.scss";
 @import "./style.scss";
 
+/*###########---Header----##########*/
 .header-conteiner {
 
     display: flex;
@@ -46,7 +47,7 @@
         @include conteiner-box(row, flex);
         @include conteiner(340px, 28px);
         border-radius: 10px;
-        background-color: rgba(118, 118, 128, 0.12);
+        background-color: $color-input;
         padding: 5px 3px 5px 3px;
         gap: 5px;
         align-items: center;
@@ -88,3 +89,43 @@
 
 }
 /*###########---Header----##########*/
+
+/*###########---SECTION----###########*/
+
+.galery{
+    width: 355px;
+    height: 550px;
+    background-color:$color-primary;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .photo-box {
+        width: 375;
+        height: auto;
+        background-color:$color-primary;
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .photo{
+        width: 124px;
+        height: 120px;
+        object-fit: cover;
+        
+       
+        &.photo:hover {
+            width: 155px;
+            height: 150px;
+        }
+
+    }
+
+
+
+
+
+
+
+
+}
