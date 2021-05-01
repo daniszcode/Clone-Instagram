@@ -90,15 +90,15 @@
   flex-direction: column;
 }
 .galery .photo-box {
-  width: 375;
+  width: 370px;
   height: auto;
   background-color: #FAFAFA;
   display: flex;
   flex-direction: row;
 }
 .galery .photo {
-  width: 124px;
-  height: 120px;
+  width: 118px;
+  height: 119px;
   object-fit: cover;
 }
 .galery .photo.photo:hover {

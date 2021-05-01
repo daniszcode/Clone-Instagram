@@ -101,7 +101,7 @@
     flex-direction: column;
 
     .photo-box {
-        width: 375;
+        width: 370px;
         height: auto;
         background-color:$color-primary;
         display: flex;
@@ -109,8 +109,8 @@
     }
    
     .photo{
-        width: 124px;
-        height: 120px;
+        width: 118px;
+        height: 119px;
         object-fit: cover;
         
        
