@@ -10,39 +10,43 @@
     @include conteiner(358px, 130px);
     background-color: $color-primary;
     margin: auto;
+
     #icons-phone {
-        display: flex;
-        flex-direction: row;
+        @include conteiner-box(row, flex);
         align-items: center;
         justify-content: flex-end;
         @include conteiner(350px, 35px);
 
-        
+
         #time {
             font-family: sans-serif;
             font-weight: 450;
-            text-align:left;
+            text-align: left;
             color: #171717;
             margin-right: auto;
+            padding: 5px;
         }
+
         #phone-sinal {
             width: 5%;
             padding: 3px;
         }
+
         #wifi-icon {
             width: 5%;
             padding: 3px;
 
         }
+
         #battery {
             width: 5%;
             padding: 3px;
 
         }
-    
+
 
     }
-        
+
     #input {
         @include conteiner-box(row, flex);
         @include conteiner(340px, 28px);
@@ -54,78 +58,77 @@
         justify-content: start;
         cursor: pointer;
         margin: 5px;
-       
+
+
+        #box-input{
+            @include conteiner(265px, 25px);
+            cursor: pointer;
+            border:none;
+            background: transparent;
+        }
+
         #icon-search {
-            width: 16px;
-            height: 16px;
+            @include conteiner(16px, 16px);
         }
 
     }
-    .buttouns{
+
+    .buttouns {
         @include conteiner-box(row, flex);
         align-items: center;
         gap: 5px;
-        width: 400px;
-        height: 50px;
+        @include conteiner(400px, 50px);
         margin: 2px 2px;
 
+
         #buttouns {
-        @include conteiner(71px, 31px);
-        background-color: $collor-buttoun;
-        border-radius: 7px;
+            @include conteiner(71px, 31px);
+            background-color: $collor-buttoun;
+            border-radius: 7px;
+            cursor: pointer;
         }
 
         #buttoun-last {
             @include conteiner(50px, 31px);
             background-color: $collor-buttoun;
             border-radius: 7px;
+            cursor: pointer;
         }
-      
-  
+
+
     }
 
 
 
 
 }
+
 /*###########---Header----##########*/
 
 /*###########---SECTION----###########*/
 
-.galery{
-    width: 355px;
-    height: 550px;
-    background-color:$color-primary;
+.galery {
+    @include conteiner(355px, 550px);
+    background-color: $color-primary;
     margin: auto;
     display: flex;
     flex-direction: column;
 
     .photo-box {
-        width: 370px;
-        height: auto;
-        background-color:$color-primary;
-        display: flex;
-        flex-direction: row;
+        @include conteiner(355px, auto);
+        background-color: $color-primary;
+        @include conteiner-box(row, flex);
     }
-   
-    .photo{
-        width: 118px;
-        height: 119px;
+
+    .photo {
+        @include conteiner(118px, 119px);
         object-fit: cover;
-        
-       
+
+
         &.photo:hover {
-            width: 155px;
-            height: 150px;
+            @include conteiner(155px, 150px);
         }
 
     }
-
-
-
-
-
-
-
-
 }
+/*###########---SECTION----###########*/

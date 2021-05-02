@@ -13,8 +13,8 @@
   margin: auto;
 }
 .header-conteiner #icons-phone {
-  display: flex;
   flex-direction: row;
+  display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 350px;
@@ -26,6 +26,7 @@
   text-align: left;
   color: #171717;
   margin-right: auto;
+  padding: 5px;
 }
 .header-conteiner #icons-phone #phone-sinal {
   width: 5%;
@@ -53,6 +54,13 @@
   cursor: pointer;
   margin: 5px;
 }
+.header-conteiner #input #box-input {
+  width: 265px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
 .header-conteiner #input #icon-search {
   width: 16px;
   height: 16px;
@@ -71,12 +79,14 @@
   height: 31px;
   background-color: #FFFFFF;
   border-radius: 7px;
+  cursor: pointer;
 }
 .header-conteiner .buttouns #buttoun-last {
   width: 50px;
   height: 31px;
   background-color: #FFFFFF;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 /*###########---Header----##########*/
@@ -90,11 +100,11 @@
   flex-direction: column;
 }
 .galery .photo-box {
-  width: 370px;
+  width: 355px;
   height: auto;
   background-color: #FAFAFA;
-  display: flex;
   flex-direction: row;
+  display: flex;
 }
 .galery .photo {
   width: 118px;
@@ -105,5 +115,7 @@
   width: 155px;
   height: 150px;
 }
+
+/*###########---SECTION----###########*/
 
 /*# sourceMappingURL=search.css.map */
