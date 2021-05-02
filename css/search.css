@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 /*###########---Header----##########*/
 .header-conteiner {
   display: flex;
@@ -43,7 +48,7 @@
 .header-conteiner #input {
   flex-direction: row;
   display: flex;
-  width: 340px;
+  width: 300px;
   height: 28px;
   border-radius: 10px;
   background-color: rgba(118, 118, 128, 0.12);
@@ -64,6 +69,10 @@
 .header-conteiner #input #icon-search {
   width: 16px;
   height: 16px;
+}
+.header-conteiner #input #icon-shape {
+  align-self: center;
+  padding: 20px;
 }
 .header-conteiner .buttouns {
   flex-direction: row;
@@ -91,7 +100,7 @@
 
 /*###########---Header----##########*/
 /*###########---SECTION----###########*/
-.galery {
+section {
   width: 355px;
   height: 550px;
   background-color: #FAFAFA;
@@ -99,23 +108,43 @@
   display: flex;
   flex-direction: column;
 }
-.galery .photo-box {
+section .galery {
+  width: 355px;
+  height: 550px;
+  background-color: #FAFAFA;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+section .galery .photo-box {
   width: 355px;
   height: auto;
   background-color: #FAFAFA;
   flex-direction: row;
   display: flex;
+  border: 1px solid white;
 }
-.galery .photo {
+section .galery .photo {
   width: 118px;
   height: 119px;
   object-fit: cover;
 }
-.galery .photo.photo:hover {
+section .galery .photo.photo:hover {
   width: 155px;
   height: 150px;
 }
 
 /*###########---SECTION----###########*/
+/*###########-----FOOTER----##########*/
+#conteiner-final {
+  width: 500px;
+  height: 170px;
+  background-color: blue;
+}
+#conteiner-finalconteiner-final::before {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
 
 /*# sourceMappingURL=search.css.map */

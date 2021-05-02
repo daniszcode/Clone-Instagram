@@ -3,6 +3,7 @@
 @import "./style.scss";
 
 /*###########---Header----##########*/
+
 .header-conteiner {
 
     display: flex;
@@ -49,7 +50,7 @@
 
     #input {
         @include conteiner-box(row, flex);
-        @include conteiner(340px, 28px);
+        @include conteiner(300px, 28px);
         border-radius: 10px;
         background-color: $color-input;
         padding: 5px 3px 5px 3px;
@@ -70,6 +71,10 @@
         #icon-search {
             @include conteiner(16px, 16px);
         }
+
+        #icon-shape {
+            align-self: center;
+            padding: 20px;        }
 
     }
 
@@ -106,7 +111,12 @@
 /*###########---Header----##########*/
 
 /*###########---SECTION----###########*/
-
+section {
+    @include conteiner(355px, 550px);
+    background-color: $color-primary;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 .galery {
     @include conteiner(355px, 550px);
     background-color: $color-primary;
@@ -118,17 +128,31 @@
         @include conteiner(355px, auto);
         background-color: $color-primary;
         @include conteiner-box(row, flex);
+        border: 1px solid white;
+
     }
 
     .photo {
         @include conteiner(118px, 119px);
         object-fit: cover;
 
-
         &.photo:hover {
             @include conteiner(155px, 150px);
         }
 
     }
-}
+}}
 /*###########---SECTION----###########*/
+/*###########-----FOOTER----##########*/
+#conteiner-final {
+    width: 500px;
+    height: 170px;
+    background-color: blue;
+
+    &conteiner-final::before {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+    }
+
+}
