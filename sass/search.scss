@@ -44,8 +44,6 @@
             padding: 3px;
 
         }
-
-
     }
 
     #input {
@@ -61,10 +59,10 @@
         margin: 5px;
 
 
-        #box-input{
+        #box-input {
             @include conteiner(265px, 25px);
             cursor: pointer;
-            border:none;
+            border: none;
             background: transparent;
         }
 
@@ -74,7 +72,8 @@
 
         #icon-shape {
             align-self: center;
-            padding: 20px;        }
+            padding: 20px;
+        }
 
     }
 
@@ -99,26 +98,15 @@
             border-radius: 7px;
             cursor: pointer;
         }
-
-
     }
-
-
-
-
 }
 
 /*###########---Header----##########*/
 
 /*###########---SECTION----###########*/
-section {
-    @include conteiner(355px, 550px);
-    background-color: $color-primary;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+
 .galery {
-    @include conteiner(355px, 550px);
+    @include conteiner(355px, auto);
     background-color: $color-primary;
     margin: auto;
     display: flex;
@@ -141,18 +129,49 @@ section {
         }
 
     }
-}}
+}
+
 /*###########---SECTION----###########*/
 /*###########-----FOOTER----##########*/
+footer {
+    @include conteiner(350px, 100px);
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    @include conteiner-box(row, flex);
+
+
+
 #conteiner-final {
-    width: 500px;
-    height: 170px;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    @include conteiner(352px, 90px);
+    background-color: #FAFAFA;
 
-    &conteiner-final::before {
-        width: 200px;
-        height: 200px;
-        background-color: black;
+    #div-footer {
+        @include conteiner(350px, 50px);
+        background-color: #FAFAFA;
+        @include conteiner-box(row, flex);
+        position: sticky;
+        left: 0px;
+        padding: 10px 3px 10px 0px;
+        gap: 58px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+       
+        #profile {
+            border-radius: 50%;
+        }
+        
+    
+        .footer-icon {
+            @include conteiner(19px, 21px);
+
+        }
+
     }
-
 }
+}
+/*###########-----FOOTER----##########*/

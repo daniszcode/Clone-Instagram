@@ -4,8 +4,8 @@
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*###########---Header----##########*/
@@ -100,23 +100,15 @@ html, body {
 
 /*###########---Header----##########*/
 /*###########---SECTION----###########*/
-section {
+.galery {
   width: 355px;
-  height: 550px;
+  height: auto;
   background-color: #FAFAFA;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-section .galery {
-  width: 355px;
-  height: 550px;
-  background-color: #FAFAFA;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-section .galery .photo-box {
+.galery .photo-box {
   width: 355px;
   height: auto;
   background-color: #FAFAFA;
@@ -124,27 +116,57 @@ section .galery .photo-box {
   display: flex;
   border: 1px solid white;
 }
-section .galery .photo {
+.galery .photo {
   width: 118px;
   height: 119px;
   object-fit: cover;
 }
-section .galery .photo.photo:hover {
+.galery .photo.photo:hover {
   width: 155px;
   height: 150px;
 }
 
 /*###########---SECTION----###########*/
 /*###########-----FOOTER----##########*/
-#conteiner-final {
-  width: 500px;
-  height: 170px;
-  background-color: blue;
-}
-#conteiner-finalconteiner-final::before {
-  width: 200px;
-  height: 200px;
+footer {
+  width: 350px;
+  height: 100px;
   background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  display: flex;
 }
+footer #conteiner-final {
+  display: flex;
+  flex-direction: column;
+  width: 352px;
+  height: 90px;
+  background-color: #FAFAFA;
+}
+footer #conteiner-final #div-footer {
+  width: 350px;
+  height: 50px;
+  background-color: #FAFAFA;
+  flex-direction: row;
+  display: flex;
+  position: sticky;
+  left: 0px;
+  padding: 10px 3px 10px 0px;
+  gap: 58px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+footer #conteiner-final #div-footer #profile {
+  border-radius: 50%;
+}
+footer #conteiner-final #div-footer .footer-icon {
+  width: 19px;
+  height: 21px;
+}
+
+/*###########-----FOOTER----##########*/
 
 /*# sourceMappingURL=search.css.map */
