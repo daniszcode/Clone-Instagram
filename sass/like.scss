@@ -1,0 +1,49 @@
+@import "./variables.scss";
+@import "./mixing.scss";
+@import "./style.scss";
+
+
+/*=========HEADER============*/
+
+.header-conteiner {
+
+    display: flex;
+    flex-direction: column;
+    @include conteiner(358px, 130px);
+    background-color: $color-primary;
+    margin: auto;
+
+    #icons-phone {
+        @include conteiner-box(row, flex);
+        align-items: center;
+        justify-content: flex-end;
+        @include conteiner(350px, 35px);
+
+
+        #time {
+            font-family: sans-serif;
+            font-weight: 450;
+            text-align: left;
+            color: #171717;
+            margin-right: auto;
+            padding: 5px;
+        }
+
+        #phone-sinal {
+            width: 5%;
+            padding: 3px;
+        }
+
+        #wifi-icon {
+            width: 5%;
+            padding: 3px;
+
+        }
+
+        #battery {
+            width: 5%;
+            padding: 3px;
+
+        }
+    }
+}
