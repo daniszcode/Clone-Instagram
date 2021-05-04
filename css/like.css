@@ -154,6 +154,7 @@ html, body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  cursor: pointer;
 }
 .follow-request .new .text {
   font-size: 13px;
@@ -177,6 +178,7 @@ html, body {
   height: 32px;
   border-radius: 50%;
   margin-left: 13px;
+  cursor: pointer;
 }
 .follow-request #today #photo-up {
   margin-right: 1px;
@@ -186,6 +188,7 @@ html, body {
   height: 32px;
   border-radius: 50%;
   margin-left: -20px;
+  cursor: pointer;
 }
 .follow-request #today #hour {
   color: rgba(128, 128, 128, 0.822);
@@ -200,6 +203,7 @@ html, body {
 }
 .follow-request #today #logo {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 /*----------------------SECTION---------------------------*/
@@ -223,9 +227,11 @@ html, body {
   height: 44px;
   border-radius: 50%;
   margin: 9px;
+  cursor: pointer;
 }
 .conteiner-week #first-box #logo {
   margin-right: 10px;
+  cursor: pointer;
 }
 .conteiner-week #first-box #perfil {
   text-decoration: none;
