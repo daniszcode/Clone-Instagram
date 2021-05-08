@@ -6,6 +6,12 @@
 html, body {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
+}
+
+.conteiner-week #three-box .text-three, .conteiner-week #second-box .text, .conteiner-week #first-box .text-conteiner-week, .follow-request #today .text-today, .follow-request .new .text-follow {
+  font-size: 13px;
+  margin-right: 70px;
 }
 
 /*=========HEADER============*/
@@ -51,8 +57,8 @@ html, body {
   width: 350px;
   height: 45px;
   margin-left: 3px;
-  display: flex;
   flex-direction: row;
+  display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
 }
@@ -96,11 +102,11 @@ html, body {
 
 .rectangle-two {
   width: 336px;
+  height: 85px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #FAFAFA;
-  height: 85px;
   margin-top: -15px;
   align-items: baseline;
   margin-bottom: 26px;
@@ -134,10 +140,10 @@ html, body {
   margin-top: 10px;
 }
 .follow-request #text-new {
-  display: flex;
   flex-direction: row;
+  display: flex;
   align-items: baseline;
-  margin: 13px 0px -2px 12px;
+  margin: 13px 0px 10px 12px;
   font-size: 13px;
   color: rgba(2, 0, 0, 0.897);
   font-family: sans-serif;
@@ -146,48 +152,62 @@ html, body {
   width: 361px;
   height: 98px;
   background-color: #FAFAFA;
+  flex-direction: row;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .follow-request .new .photo {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 15px;
 }
-.follow-request .new .text {
-  font-size: 13px;
-  margin-right: 70px;
+.follow-request .new .text-follow {
+  padding-right: 4px;
 }
 .follow-request .new .hour {
   color: rgba(128, 128, 128, 0.822);
   font-size: 13px;
   font-family: sans-serif;
 }
+.follow-request .new #my-photo {
+  padding-left: 12px;
+}
+.follow-request #text-today-titlle {
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+  margin: 13px 0px 0px 12px;
+  font-size: 13px;
+  color: rgba(2, 0, 0, 0.897);
+  font-family: sans-serif;
+}
 .follow-request #today {
   width: 360px;
   height: 98px;
   background-color: #FAFAFA;
+  flex-direction: row;
   display: flex;
   align-items: center;
-  flex-direction: row;
 }
 .follow-request #today #photo-profile {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  margin-left: 13px;
+  margin-left: 10px;
   cursor: pointer;
+  margin-bottom: 13px;
 }
 .follow-request #today #photo-up {
   margin-right: 1px;
   margin-bottom: 76px;
   margin-top: 109px;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  margin-left: -20px;
+  margin-left: -32px;
   cursor: pointer;
 }
 .follow-request #today #hour {
@@ -195,11 +215,9 @@ html, body {
   font-size: 13px;
   font-family: sans-serif;
 }
-.follow-request #today .text {
+.follow-request #today .text-today {
   margin-right: 22px;
   margin-left: 14px;
-  font-size: 13px;
-  margin-right: 70px;
 }
 .follow-request #today #logo {
   margin-right: 10px;
@@ -210,7 +228,7 @@ html, body {
 .conteiner-week {
   background-color: #FAFAFA;
   width: 360px;
-  height: 317px;
+  height: 360px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -223,8 +241,8 @@ html, body {
   align-items: center;
 }
 .conteiner-week #first-box .photo {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   margin: 9px;
   cursor: pointer;
@@ -236,11 +254,9 @@ html, body {
 .conteiner-week #first-box #perfil {
   text-decoration: none;
 }
-.conteiner-week #first-box .text {
+.conteiner-week #first-box .text-conteiner-week {
   margin-right: 22px;
-  margin-left: 14px;
-  font-size: 13px;
-  margin-right: 70px;
+  margin-left: 10px;
 }
 .conteiner-week #second-box {
   display: flex;
@@ -254,10 +270,6 @@ html, body {
   width: 12px;
   height: 10px;
 }
-.conteiner-week #second-box .text {
-  font-size: 13px;
-  margin-right: 70px;
-}
 .conteiner-week #text-new {
   display: flex;
   flex-direction: row;
@@ -266,6 +278,25 @@ html, body {
   font-size: 12px;
   color: rgba(2, 0, 0, 0.897);
   font-family: sans-serif;
+}
+.conteiner-week #three-box {
+  width: 359px;
+  height: 100px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteiner-week #three-box #img-three-box {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  padding: 6px;
+}
+.conteiner-week #three-box .text-three {
+  margin-right: 22px;
+  margin-left: 19px;
 }
 
 /*# sourceMappingURL=like.css.map */
