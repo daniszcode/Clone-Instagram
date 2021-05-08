@@ -110,7 +110,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: $color-primary;
+    background-color: $color-like-page;
     margin-top: -15px;
     align-items: baseline;
     margin-bottom: 26px;
@@ -133,12 +133,13 @@
 /*----------------------SECTION---------------------------*/
 
 .follow-request {
-    @include conteiner(360px, 244px);
-    background-color: $color-primary;
+    @include conteiner(358px, 244px);
+    background-color: $color-like-page;
     display: flex;
     flex-direction: column;
-    margin: auto;
-
+    margin: 1px 0px 1px;
+    margin-left: auto;
+    margin-right: auto;
 
 
     &::after {
@@ -148,7 +149,10 @@
         background-color: rgba(128, 128, 128, 0.356);
         margin-top: 10px;
     }
-
+    #line {
+        width: 357px;
+        height: 115px;
+        margin: 1px 0px 5px 0px;
 
     #text-new {
         @include conteiner-box(row, flex);
@@ -161,24 +165,22 @@
     }
 
     .new {
-        @include conteiner(361px, 98px);
-
-        background-color: $color-primary;
+        width: 358px;
+        height: 50px;
+        background-color: #FFFFFF;
         @include conteiner-box(row, flex);
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
 
         .photo {
             @include conteiner(48px, 48px);
             border-radius: 50%;
             cursor: pointer;
-            margin-right: 15px;
-        }
+            margin: 5px 10px 0px 0px;        }
 
         .text-follow {
             @extend %text-details;
-            padding-right: 4px;
-        }
+            margin: 7px 69px 0px 10px;        }
 
         .hour {
             color: rgba(128, 128, 128, 0.822);
@@ -187,24 +189,25 @@
         }
 
         #my-photo {
-            padding-left: 12px;
+            padding-left: 13px;
         }
 
 
-    }
+    }}
 
     #text-today-titlle {
-        @include conteiner-box(row, flex);
-        align-items: baseline;
-        margin: 13px 0px 0px 12px;
-        font-size: 13px;
+
+        width: 339px;
+        height: 54px;
+        margin-top: 7px;
+        padding: 10px;
         color: rgba(2, 0, 0, 0.897);
         font-family: sans-serif;
     }
 
     #today {
         @include conteiner(360px, 98px);
-        background-color: #FAFAFA;
+        background-color: $color-like-page;;
         @include conteiner-box(row, flex);
         align-items: center;
 
@@ -258,7 +261,7 @@
 /*----------------------SECTION---------------------------*/
 
 .conteiner-week {
-    background-color: $color-primary;
+    background-color: $color-like-page;;
     @include conteiner(360px, 360px);
     margin: auto;
     display: flex;
