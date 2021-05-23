@@ -2,7 +2,7 @@
 @import "./mixing.scss";
 @import "./style.scss";
 @import "./extend.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
 /*=========HEADER============*/
 
@@ -149,51 +149,55 @@
         background-color: rgba(128, 128, 128, 0.356);
         margin-top: 10px;
     }
+
     #line {
-        width: 357px;
+        width: 358px;
         height: 115px;
         margin: 1px 0px 5px 0px;
 
-    #text-new {
-        @include conteiner-box(row, flex);
-        align-items: baseline;
-        margin: 13px 0px 10px 12px;
-        font-size: 13px;
-        color: rgba(2, 0, 0, 0.897);
-        font-family: sans-serif;
-
-    }
-
-    .new {
-        width: 358px;
-        height: 50px;
-        background-color: #FFFFFF;
-        @include conteiner-box(row, flex);
-        align-items: baseline;
-        justify-content: center;
-
-        .photo {
-            @include conteiner(48px, 48px);
-            border-radius: 50%;
-            cursor: pointer;
-            margin: 5px 10px 0px 0px;        }
-
-        .text-follow {
-            @extend %text-details;
-            margin: 7px 69px 0px 10px;        }
-
-        .hour {
-            color: rgba(128, 128, 128, 0.822);
+        #text-new {
+            @include conteiner-box(row, flex);
+            align-items: baseline;
+            margin: 13px 0px 10px 12px;
             font-size: 13px;
+            color: rgba(2, 0, 0, 0.897);
             font-family: sans-serif;
+
         }
 
-        #my-photo {
-            padding-left: 13px;
+        .new {
+            width: 358px;
+            height: 50px;
+            background-color: #FFFFFF;
+            @include conteiner-box(row, flex);
+            align-items: baseline;
+            justify-content: center;
+
+            .photo {
+                @include conteiner(48px, 48px);
+                border-radius: 50%;
+                cursor: pointer;
+                margin: 5px 10px 0px 0px;
+            }
+
+            .text-follow {
+                @extend %text-details;
+                margin: 7px 69px 0px 10px;
+            }
+
+            .hour {
+                color: rgba(128, 128, 128, 0.822);
+                font-size: 13px;
+                font-family: sans-serif;
+            }
+
+            #my-photo {
+                padding-left: 13px;
+            }
+
+
         }
-
-
-    }}
+    }
 
     #text-today-titlle {
 
@@ -206,8 +210,9 @@
     }
 
     #today {
-        @include conteiner(360px, 98px);
-        background-color: $color-like-page;;
+        @include conteiner(358px, 98px);
+        background-color: $color-like-page;
+        ;
         @include conteiner-box(row, flex);
         align-items: center;
 
@@ -261,8 +266,8 @@
 /*----------------------SECTION---------------------------*/
 
 .conteiner-week {
-    background-color: $color-like-page;;
-    @include conteiner(360px, 360px);
+    background-color: $color-like-page;
+    @include conteiner(358px, 360px);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -271,7 +276,7 @@
 
         display: flex;
         flex-direction: row;
-        @include conteiner(360px, 91px);
+        @include conteiner(358px, 91px);
         align-items: center;
 
         .photo {
@@ -290,6 +295,7 @@
 
         #perfil {
             text-decoration: none;
+            color: #3797EF;
         }
 
         .text-conteiner-week {
@@ -297,6 +303,12 @@
             margin-left: 10px;
             @extend %text-details;
 
+        }
+
+        .hour {
+            color: rgba(128, 128, 128, 0.822);
+            font-size: 13px;
+            font-family: sans-serif;
         }
     }
 
@@ -310,11 +322,16 @@
 
         #icon-like {
             @include conteiner(12px, 10px);
+            cursor: pointer;
+
         }
 
         .text {
 
+            margin-right: 22px;
+            margin-left: 10px;
             @extend %text-details;
+            cursor: pointer;
 
         }
 
@@ -332,7 +349,7 @@
 
 
     #three-box {
-        @include conteiner(359px, 100px);
+        @include conteiner(358px, 100px);
         @include conteiner-box(flex, row);
         align-items: center;
         justify-content: center;
@@ -340,29 +357,136 @@
 
         #img-three-box {
             border-radius: 50%;
-            @include conteiner(45px, 45px);
+            @include conteiner(48px, 48px);
             object-fit: cover;
-            padding: 6px;
+            margin: 9px;
+            cursor: pointer;
 
         }
 
         .text-three {
             margin-right: 22px;
-            margin-left: 19px;
+            margin-left: 11px;
             @extend %text-details;
 
         }
 
+        #msg-input {
+            @extend %input-details;
+
+        }
+
+        .hour {
+            color: rgba(128, 128, 128, 0.822);
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+    }
+
+    #four-box {
+        background-color: $color-like-page;
+        @include conteiner(358px, 100px);
+        @include conteiner-box(flex, row);
+        align-items: center;
+        justify-content: center;
+
+        #img-four-box {
+            border-radius: 50%;
+            @include conteiner(48px, 48px);
+            object-fit: cover;
+            margin: 9px;
+            cursor: pointer;
+
+        }
+
+        .text-four {
+
+            margin-right: 22px;
+            margin-left: 11px;
+            @extend %text-details;
+        }
+
+        #msg-input-two {
+            @extend %input-details;
+
+        }
+
+        .hour {
+            color: rgba(128, 128, 128, 0.822);
+            font-size: 13px;
+            font-family: sans-serif;
+        }
+    }
+
+    #five-box {
+        background-color: $color-like-page;
+        @include conteiner(358px, 100px);
+        @include conteiner-box(flex, row);
+        align-items: center;
+        justify-content: center;
+
+        #img-five-box {
+            border-radius: 50%;
+            @include conteiner(48px, 48px);
+            object-fit: cover;
+            margin: 9px;
+            cursor: pointer;
+        }
+
+        .text-five {
+
+            margin-right: 22px;
+            margin-left: 11px;
+            @extend %text-details;
+        }
+
+        #msg-input-three {
+            margin-right: 10px;
+            @include conteiner(90px, 28px);
+            background-color: #3797EF;
+            border-radius: 4px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 14px;
+            color: azure;
+            cursor: pointer;
+
+        }
+
+        .hour {
+            color: rgba(128, 128, 128, 0.822);
+            font-size: 13px;
+            font-family: sans-serif;
+        }
     }
 
 
 
+}
+
+/*----------------------SECTION---------------------------*/
+
+/*----------------------FOOTER---------------------------*/
+
+#conteiner-final {
+    background-color: $color-primary;
+    @include conteiner(358px, 79px);
+    @include conteiner-box(row, flex);
+    margin: auto;
+    position: sticky;
+    border: 1px solid rgba(128, 128, 128, 0.356);
 
 
+    .footer-icon {
+        padding: 12px 22px 29px 23px;
+        cursor: pointer;
+    }
+
+    #profile {
+        @include conteiner(23px, 23px);
+        cursor: pointer;
 
 
-
-
+    }
 
 
 
