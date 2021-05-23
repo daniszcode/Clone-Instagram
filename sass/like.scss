@@ -178,6 +178,7 @@
                 border-radius: 50%;
                 cursor: pointer;
                 margin: 5px 10px 0px 0px;
+                object-fit: cover;
             }
 
             .text-follow {
@@ -192,7 +193,9 @@
             }
 
             #my-photo {
-                padding-left: 13px;
+                padding-left: 6px;
+                cursor: pointer;
+
             }
 
 

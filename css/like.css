@@ -183,6 +183,7 @@ html, body {
   border-radius: 50%;
   cursor: pointer;
   margin: 5px 10px 0px 0px;
+  object-fit: cover;
 }
 .follow-request #line .new .text-follow {
   margin: 7px 69px 0px 10px;
@@ -193,7 +194,8 @@ html, body {
   font-family: sans-serif;
 }
 .follow-request #line .new #my-photo {
-  padding-left: 13px;
+  padding-left: 6px;
+  cursor: pointer;
 }
 .follow-request #text-today-titlle {
   width: 339px;
