@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #d4d4d4;
+}
+
+/*=========HEADER============*/
+.header-conteiner {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  height: 130px;
+  background-color: #FAFAFA;
+  margin: auto;
+  gap: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+}
+.header-conteiner #icons-phone {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 350px;
+  height: 35px;
+}
+.header-conteiner #icons-phone #time {
+  font-family: sans-serif;
+  font-weight: 450;
+  text-align: left;
+  color: #171717;
+  margin-right: auto;
+  padding: 5px;
+}
+.header-conteiner #icons-phone #phone-sinal {
+  width: 5%;
+  padding: 3px;
+}
+.header-conteiner #icons-phone #wifi-icon {
+  width: 5%;
+  padding: 3px;
+}
+.header-conteiner #icons-phone #battery {
+  width: 5%;
+  padding: 3px;
+}
+.header-conteiner #icons-title-profile {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+.header-conteiner #icons-title-profile :nth-child(4n) {
+  margin-left: auto;
+  padding: 0px 8px;
+}
+.header-conteiner #icons-title-profile #text-title {
+  font-size: 15pt;
+  color: #262626;
+  padding: 0px 5px 0px 6px;
+}
+.header-conteiner #icons-title-profile #padlock {
+  margin-left: auto;
+  padding: 0px 0px 0px 43px;
+}
+.header-conteiner #icons-title-profile #seta {
+  margin-right: auto;
+}
+.header-conteiner #icons-title-profile #trace {
+  width: 20px;
+  height: 15px;
+}
+
+/*# sourceMappingURL=profile-menu.css.map */

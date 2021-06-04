@@ -1,0 +1,85 @@
+@import "./variables.scss";
+@import "./mixing.scss";
+@import "./style.scss";
+@import "./extend.scss";
+
+/*=========HEADER============*/
+
+.header-conteiner {
+
+    display: flex;
+    flex-direction: column;
+    @include conteiner(358px, 130px);
+    background-color: $color-primary;
+    margin: auto;
+    gap: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.356);
+
+    #icons-phone {
+        @include conteiner-box(row, flex);
+        align-items: center;
+        justify-content: flex-end;
+        @include conteiner(350px, 35px);
+
+
+
+        #time {
+            font-family: sans-serif;
+            font-weight: 450;
+            text-align: left;
+            color: #171717;
+            margin-right: auto;
+            padding: 5px;
+        }
+
+        #phone-sinal {
+            width: 5%;
+            padding: 3px;
+        }
+
+        #wifi-icon {
+            width: 5%;
+            padding: 3px;
+
+        }
+
+        #battery {
+            width: 5%;
+            padding: 3px;
+
+        }
+    }
+
+    #icons-title-profile {
+
+        @include conteiner-box(row, flex);
+        align-items: center;
+
+        :nth-child(4n) {
+            margin-left: auto;
+            padding: 0px 8px;
+        }
+
+
+        #text-title {
+            font-size: 15pt;
+            color: #262626;
+            padding: 0px 5px 0px 6px
+        }
+
+        #padlock {
+            margin-left: auto;
+            padding: 0px 0px 0px 43px;
+        }
+
+        #seta {
+            margin-right: auto;
+
+        }
+
+        #trace {
+            @include conteiner(20px, 15px);
+
+        }
+    }
+}
