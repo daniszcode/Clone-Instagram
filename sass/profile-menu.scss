@@ -93,21 +93,37 @@
     display: flex;
     flex-direction: column;
     @include conteiner(358px, 261px);
-    background-color: red;
+    background-color: $color-primary;
     margin: auto;
 
     #icon-info {
         @include conteiner-box(row, flex);
+        @include conteiner(100%, 100%);
+        background-color: $color-primary;
+
+    }
         
         #photo-profile {
             border-radius: 50%;
             @include conteiner(86px, 86px);
+            padding: 10px 8px;
         }
 
-
-    }
-
+        .numbers{
+            font-family: sans-serif;
+            font-size: 16px;
+            padding: 30px 14px;
+            text-align: center;
+            font-weight: 600;
+        
+            .text-bio {
+                font-size: 15px;
+                font-weight: 400;
     
+    
+            }
+        }
+
 
 
 

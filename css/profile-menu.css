@@ -80,17 +80,32 @@ html, body {
   flex-direction: column;
   width: 358px;
   height: 261px;
-  background-color: red;
+  background-color: #FAFAFA;
   margin: auto;
 }
 #info-menu #icon-info {
   flex-direction: row;
   display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
 }
-#info-menu #icon-info #photo-profile {
+#info-menu #photo-profile {
   border-radius: 50%;
   width: 86px;
   height: 86px;
+  padding: 10px 8px;
+}
+#info-menu .numbers {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 30px 14px;
+  text-align: center;
+  font-weight: 600;
+}
+#info-menu .numbers .text-bio {
+  font-size: 15px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=profile-menu.css.map */
