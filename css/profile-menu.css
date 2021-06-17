@@ -15,7 +15,7 @@ html, body {
   display: flex;
   flex-direction: column;
   width: 358px;
-  height: 130px;
+  height: 90px;
   background-color: #FAFAFA;
   margin: auto;
   gap: 15px;
@@ -73,6 +73,24 @@ html, body {
 .header-conteiner #icons-title-profile #trace {
   width: 20px;
   height: 15px;
+}
+
+#info-menu {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  height: 261px;
+  background-color: red;
+  margin: auto;
+}
+#info-menu #icon-info {
+  flex-direction: row;
+  display: flex;
+}
+#info-menu #icon-info #photo-profile {
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
 }
 
 /*# sourceMappingURL=profile-menu.css.map */
