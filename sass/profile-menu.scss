@@ -102,33 +102,51 @@
         background-color: $color-primary;
 
     }
-        
-        #photo-profile {
-            border-radius: 50%;
-            @include conteiner(86px, 86px);
-            padding: 10px 8px;
+
+    #photo-profile {
+        border-radius: 50%;
+        @include conteiner(86px, 86px);
+        padding: 10px 8px;
+    }
+
+    .numbers {
+        font-family: sans-serif;
+        font-size: 16px;
+        padding: 30px 14px;
+        text-align: center;
+        font-weight: 600;
+
+        .text-bio {
+            font-size: 15px;
+            font-weight: 400;
+
+
+        }
+    }
+
+    #info-bio {
+        @include conteiner(100%, 100%);
+        background-color: aqua;
+
+        #name {
+            font-size: 12pt;
+            font-weight: 500;
         }
 
-        .numbers{
-            font-family: sans-serif;
-            font-size: 16px;
-            padding: 30px 14px;
-            text-align: center;
-            font-weight: 600;
-        
-            .text-bio {
-                font-size: 15px;
-                font-weight: 400;
-    
-    
-            }
+        #definition {
+            font-weight: 400;
+            font-size: 10pt;
         }
 
+        #link-bio {
+            text-decoration: none;
+            color: #3797EF;
+        }
 
-
-
-
-
+        #button-bio {
+            
+        }
+    }
 
 
 

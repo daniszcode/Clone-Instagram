@@ -107,5 +107,22 @@ html, body {
   font-size: 15px;
   font-weight: 400;
 }
+#info-menu #info-bio {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+#info-menu #info-bio #name {
+  font-size: 12pt;
+  font-weight: 500;
+}
+#info-menu #info-bio #definition {
+  font-weight: 400;
+  font-size: 10pt;
+}
+#info-menu #info-bio #link-bio {
+  text-decoration: none;
+  color: #3797EF;
+}
 
 /*# sourceMappingURL=profile-menu.css.map */
