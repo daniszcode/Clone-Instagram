@@ -149,7 +149,7 @@ html, body {
   height: 100%;
   flex-direction: row;
   display: flex;
-  background-color: aqua;
+  background-color: #FAFAFA;
   gap: 15px;
 }
 #info-menu #spotlight-bio #circle {
@@ -166,16 +166,19 @@ html, body {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  margin: 9px 3px;
 }
 #info-menu #spotlight-bio #photo-three {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  margin: 9px 6px;
 }
 #info-menu #spotlight-bio #photo-four {
   width: 64px;
   height: 64px;
   border-radius: 50%;
+  margin: 9px 8px;
 }
 
 /*# sourceMappingURL=profile-menu.css.map */

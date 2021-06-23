@@ -165,7 +165,7 @@
     #spotlight-bio {
         @include conteiner(100%, 100%);
         @include conteiner-box(row, flex);
-        background-color: aqua;
+        background-color: $color-primary;
         gap: 15px;
         
 
@@ -181,22 +181,27 @@
 
         }
         #photo-one{
-            padding: 21px 0px 0px 24px;        }
+            padding: 21px 0px 0px 24px;        
+            
+        }
 
         #photo-two {
             width: 64px;
             height: 64px;
             border-radius: 50%;
+            margin: 9px 3px;
         }
         #photo-three {
             width: 64px;
             height: 64px;
             border-radius: 50%;
+            margin: 9px 6px;
         }
         #photo-four {
             width: 64px;
             height: 64px;
             border-radius: 50%;
+            margin: 9px 8px;
         }
 
 
