@@ -217,11 +217,38 @@
 
 #gallery {
     background-color: aqua;
-    width: 100%;
-    height: 100%;
+    @include conteiner(100%, 100%);
     margin-top: 5px;
     margin-inline: auto;
-    
+    display: flex;
+    flex-direction: column;
+
+
+    #icons-gallery {
+        @include conteiner(100%, 100%);
+        @include conteiner-box(row, flex);
+        background-color: aquamarine;
+        margin-inline: auto;
+
+        
+        #icon-gallery {
+            @include conteiner(32px, 32px);
+
+        }
+
+
+
+    }
+    #photos-gallery {
+        @include conteiner(100%, 100%);
+        @include conteiner-box(row, flex);
+
+
+        #photo-book{
+            @include conteiner(124px, 124px);
+
+        }
+    }
 
 
 
