@@ -127,7 +127,6 @@
     #info-bio {
         @include conteiner(100%, 100%);
         background-color: $color-primary;
-        margin-bottom: 23px;
 
         #name {
             font-size: 10pt;
@@ -217,37 +216,51 @@
 
 #gallery {
     background-color: aqua;
-    @include conteiner(100%, 100%);
+    @include conteiner(358px, 350px);
     margin-top: 5px;
-    margin-inline: auto;
+    margin: 46px auto 0px auto;
     display: flex;
     flex-direction: column;
 
 
     #icons-gallery {
-        @include conteiner(100%, 100%);
+        @include conteiner(358px, 44px);
         @include conteiner-box(row, flex);
-        background-color: aquamarine;
-        margin-inline: auto;
+        background-color: $color-primary;
+        margin: -1px auto;
 
-        
         #icon-gallery {
-            @include conteiner(32px, 32px);
-
+            @include conteiner(22px, 22px);
+            padding: 5px 69px 5px 75px;
         }
 
 
 
     }
+
     #photos-gallery {
         @include conteiner(100%, 100%);
-        @include conteiner-box(row, flex);
+        display: flex;
+        flex-direction: column;
+        margin-inline: auto;
+
+        .photo-box {
+
+            @include conteiner(100%, 100%);
+            @include conteiner-box(row, flex);
+            margin: 0px 1px 1px 2px;
+        }
+
+        #photo-book {
+            @include conteiner(116px, 130px);
+            object-fit: fill;
+            border: 0.5px solid white;
 
 
-        #photo-book{
-            @include conteiner(124px, 124px);
 
         }
+
+
     }
 
 
