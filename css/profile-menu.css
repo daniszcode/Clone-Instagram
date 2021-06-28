@@ -14,7 +14,7 @@ html, body {
 .header-conteiner {
   display: flex;
   flex-direction: column;
-  width: 358px;
+  width: 359px;
   height: 90px;
   background-color: #FAFAFA;
   margin: auto;
@@ -65,19 +65,22 @@ html, body {
 .header-conteiner #icons-title-profile #padlock {
   margin-left: auto;
   padding: 0px 0px 0px 70px;
+  cursor: pointer;
 }
 .header-conteiner #icons-title-profile #seta {
   margin-right: auto;
+  cursor: pointer;
 }
 .header-conteiner #icons-title-profile #trace {
   width: 20px;
   height: 15px;
+  cursor: pointer;
 }
 
 #info-menu {
   display: flex;
   flex-direction: column;
-  width: 358px;
+  width: 359px;
   height: 261px;
   background-color: #FAFAFA;
   margin: auto;
@@ -94,6 +97,7 @@ html, body {
   width: 86px;
   height: 86px;
   padding: 10px 8px;
+  cursor: pointer;
 }
 #info-menu .numbers {
   font-family: sans-serif;
@@ -102,6 +106,7 @@ html, body {
   text-align: center;
   font-weight: 600;
   color: #262626;
+  cursor: pointer;
 }
 #info-menu .numbers .text-bio {
   font-size: 15px;
@@ -131,6 +136,7 @@ html, body {
 #info-menu #info-bio #link-bio {
   text-decoration: none;
   color: #035097;
+  cursor: pointer;
 }
 #info-menu #info-bio #button-bio {
   width: 337px;
@@ -142,6 +148,7 @@ html, body {
   font-weight: 600;
   color: #262626;
   border: 0.5px solid #3c3c4328;
+  cursor: pointer;
 }
 #info-menu #spotlight-bio {
   width: 100%;
@@ -160,29 +167,33 @@ html, body {
 }
 #info-menu #spotlight-bio #photo-one {
   padding: 21px 0px 0px 24px;
+  cursor: pointer;
 }
 #info-menu #spotlight-bio #photo-two {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   margin: 9px 0px;
+  cursor: pointer;
 }
 #info-menu #spotlight-bio #photo-three {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   margin: 9px 9px;
+  cursor: pointer;
 }
 #info-menu #spotlight-bio #photo-four {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   margin: 9px 6px;
+  cursor: pointer;
 }
 
 #gallery {
-  background-color: aqua;
-  width: 358px;
+  background-color: #FAFAFA;
+  width: 359px;
   height: 350px;
   margin-top: 5px;
   margin: 46px auto 0px auto;
@@ -190,12 +201,23 @@ html, body {
   flex-direction: column;
 }
 #gallery #icons-gallery {
-  width: 358px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   flex-direction: row;
   display: flex;
   background-color: #FAFAFA;
   margin: -1px auto;
+  cursor: pointer;
+}
+#gallery #icons-gallery::after {
+  display: block;
+  content: "";
+  width: 177px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.658);
+  margin-top: 31px;
+  margin-right: -8px;
+  margin-left: -332px;
 }
 #gallery #icons-gallery #icon-gallery {
   width: 22px;
@@ -208,19 +230,20 @@ html, body {
   display: flex;
   flex-direction: column;
   margin-inline: auto;
+  padding-top: 2px;
 }
 #gallery #photos-gallery .photo-box {
   width: 100%;
   height: 100%;
   flex-direction: row;
   display: flex;
-  margin: 0px 1px 1px 2px;
 }
 #gallery #photos-gallery #photo-book {
-  width: 116px;
-  height: 130px;
+  width: 118px;
+  height: 120px;
   object-fit: fill;
-  border: 0.5px solid white;
+  border: 0.2px solid white;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=profile-menu.css.map */

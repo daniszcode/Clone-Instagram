@@ -9,7 +9,7 @@
 
     display: flex;
     flex-direction: column;
-    @include conteiner(358px, 90px);
+    @include conteiner(359px, 90px);
     background-color: $color-primary;
     margin: auto;
     gap: 15px;
@@ -69,15 +69,21 @@
         #padlock {
             margin-left: auto;
             padding: 0px 0px 0px 70px;
+            cursor: pointer;
+
         }
 
         #seta {
             margin-right: auto;
+            cursor: pointer;
+
 
         }
 
         #trace {
             @include conteiner(20px, 15px);
+            cursor: pointer;
+
 
         }
     }
@@ -91,7 +97,7 @@
 #info-menu {
     display: flex;
     flex-direction: column;
-    @include conteiner(358px, 261px);
+    @include conteiner(359px, 261px);
     background-color: $color-primary;
     margin: auto;
 
@@ -106,6 +112,8 @@
         border-radius: 50%;
         @include conteiner(86px, 86px);
         padding: 10px 8px;
+        cursor: pointer;
+
     }
 
     .numbers {
@@ -115,6 +123,8 @@
         text-align: center;
         font-weight: 600;
         color: #262626;
+        cursor: pointer;
+
 
         .text-bio {
             font-size: 15px;
@@ -147,6 +157,8 @@
         #link-bio {
             text-decoration: none;
             color: #035097;
+            cursor: pointer;
+
         }
 
         #button-bio {
@@ -158,6 +170,8 @@
             font-weight: 600;
             color: #262626;
             border: 0.5px solid #3c3c4328;
+            cursor: pointer;
+
         }
     }
 
@@ -180,6 +194,8 @@
 
         #photo-one {
             padding: 21px 0px 0px 24px;
+            cursor: pointer;
+
 
         }
 
@@ -188,6 +204,8 @@
             height: 64px;
             border-radius: 50%;
             margin: 9px 0px;
+            cursor: pointer;
+
         }
 
         #photo-three {
@@ -195,6 +213,8 @@
             height: 64px;
             border-radius: 50%;
             margin: 9px 9px;
+            cursor: pointer;
+
         }
 
         #photo-four {
@@ -202,6 +222,8 @@
             height: 64px;
             border-radius: 50%;
             margin: 9px 6px;
+            cursor: pointer;
+
         }
 
 
@@ -215,8 +237,8 @@
 //###################SECTION-GALLERY########################//
 
 #gallery {
-    background-color: aqua;
-    @include conteiner(358px, 350px);
+    background-color: $color-primary;
+    @include conteiner(359px, 350px);
     margin-top: 5px;
     margin: 46px auto 0px auto;
     display: flex;
@@ -224,14 +246,28 @@
 
 
     #icons-gallery {
-        @include conteiner(358px, 44px);
+        @include conteiner(100%, 100%);
         @include conteiner-box(row, flex);
         background-color: $color-primary;
         margin: -1px auto;
+        cursor: pointer;
 
+        
+
+        &::after {
+            display: block;
+            content: "";
+            width: 177px;
+            height: 2px;
+            background-color: rgba(0, 0, 0, 0.658);
+            margin-top: 31px;
+            margin-right: -8px;
+            margin-left: -332px;
+        }
         #icon-gallery {
             @include conteiner(22px, 22px);
             padding: 5px 69px 5px 75px;
+            
         }
 
 
@@ -243,18 +279,20 @@
         display: flex;
         flex-direction: column;
         margin-inline: auto;
+        padding-top: 2px ;
 
         .photo-box {
 
             @include conteiner(100%, 100%);
             @include conteiner-box(row, flex);
-            margin: 0px 1px 1px 2px;
         }
 
         #photo-book {
-            @include conteiner(116px, 130px);
+            @include conteiner(118px, 120px);
             object-fit: fill;
-            border: 0.5px solid white;
+            border: 0.2px solid white;
+            cursor: pointer;
+
 
 
 
