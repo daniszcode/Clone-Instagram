@@ -246,4 +246,33 @@ html, body {
   cursor: pointer;
 }
 
+#conteiner-final {
+  background-color: #FAFAFA;
+  width: 358px;
+  height: 79px;
+  flex-direction: row;
+  display: flex;
+  margin: auto;
+  position: sticky;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+}
+#conteiner-final::after {
+  display: block;
+  content: "";
+  width: 122px;
+  height: 5px;
+  background-color: #060606;
+  margin-top: 56px;
+  margin-left: -240px;
+}
+#conteiner-final .footer-icon {
+  padding: 12px 22px 29px 23px;
+  cursor: pointer;
+}
+#conteiner-final #profile {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=profile-menu.css.map */
