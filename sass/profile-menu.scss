@@ -319,8 +319,8 @@
     &::after {
         display: block;
         content: "";
-        width: 122px;
-        height: 5px;
+        @include conteiner(122px, 5px);
+
         background-color: #060606;
         margin-top: 56px;
         margin-left: -240px;
