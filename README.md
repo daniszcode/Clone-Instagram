@@ -28,4 +28,8 @@ Projeto feito durante o curso Estartando Devs, objetivando a prática do HTML/CS
 
 - [@daniszcode](https://github.com/daniszcode)
 
+## LINK do projeto
+
+- [https://clone-instagram-dani.vercel.app/profile/profile-menu.html](https://clone-instagram-dani.vercel.app/profile/profile-menu.html)
+
   
